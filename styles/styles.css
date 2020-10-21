@@ -2488,12 +2488,12 @@ mark,
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 1140px;
   }
 }
 @media (min-width: 1440px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1380px;
+    max-width: 1140px;
   }
 }
 .row {
@@ -9025,7 +9025,7 @@ a.text-very-light-gray:hover, a.text-very-light-gray:focus {
   border-radius: 5px;
   z-index: 23;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 991.98px) {
   .mobile-menu-wrapper {
     display: block;
   }
@@ -9161,34 +9161,32 @@ a.text-very-light-gray:hover, a.text-very-light-gray:focus {
 @media (min-width: 992px) {
   .hero-intro-wrapper {
     background: url(../images/bg-intro-desktop.svg) no-repeat;
-    background-position: 280% 63%;
+    background-position: -170% 37%;
+    background-size: auto 100vw;
   }
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 991.98px) {
   .hero-intro-wrapper {
     background: url(../images/bg-intro-mobile.svg) no-repeat;
     background-size: cover;
+    background-position: auto;
   }
 }
 .hero-intro-wrapper .intro-hero-img {
   background: url(../images/image-mockups.png) no-repeat;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .hero-intro-wrapper .intro-hero-img {
-    /*  width: 50.5%;
-    height: 129.89%;
-    position: absolute;
-    right: 0;
-    background-size: 91%; */
-    width: 60.5%;
+    width: 60%;
     height: 116%;
     position: absolute;
     right: 0;
     background-size: 120%;
     background-position-y: bottom;
+    max-width: 740px;
   }
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 991.98px) {
   .hero-intro-wrapper .intro-hero-img {
     width: 100%;
     padding-top: 122%;
