@@ -1,0 +1,37 @@
+.hero-intro-wrapper {
+  min-height: 100vh;
+  @include media-breakpoint-up(lg) {
+    background: url(../images/bg-intro-desktop.svg) no-repeat;
+    background-position: 280% 63%;
+  }
+  @include media-breakpoint-down(lg) {
+    background: url(../images/bg-intro-mobile.svg) no-repeat;
+    background-size: cover;
+  }
+
+  .intro-hero-img {
+    background: url(../images/image-mockups.png) no-repeat;
+    @include media-breakpoint-up(lg) {
+      /*  width: 50.5%;
+      height: 129.89%;
+      position: absolute;
+      right: 0;
+      background-size: 91%; */
+      width: 60.5%;
+      height: 116%;
+      position: absolute;
+      right: 0;
+      background-size: 120%;
+      background-position-y: bottom;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      // height: 129.89%;
+      padding-top: 122%;
+      position: relative;
+      right: 0;
+      left: 0;
+      background-size: 100%;
+    }
+  }
+}
