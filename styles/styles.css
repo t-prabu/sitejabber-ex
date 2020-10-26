@@ -5716,7 +5716,7 @@ button.hero:focus {
   align-self: flex-end !important;
 }
 
-.align-self-center, .header .header__logo .header__logo--align-self-center {
+.align-self-center, .header .header__logo {
   align-self: center !important;
 }
 
