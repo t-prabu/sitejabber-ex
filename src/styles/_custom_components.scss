@@ -24,3 +24,31 @@ a.text-dark {
     color: $primary !important;
   }
 }
+
+.latest-articles {
+  @extend .bg-very-light-gray;
+  @extend .p-t-100;
+  @extend .p-b-75;
+  .latest-articles__title {
+    @extend .m-b-50;
+  }
+  .latest-articles__card {
+    @extend .card;
+    @extend .border-0;
+    @extend .text-left;
+    @extend .flex-fill;
+    .articles__card__title {
+      @extend .card-title;
+    }
+    .articles__card__img {
+      @extend .card-img-top;
+    }
+    .articles__card__text {
+      @extend .card-text
+    }
+    .articles__card--text-muted {
+      @extend .text-muted;
+      @extend .m-b-10;
+    }
+  }
+}

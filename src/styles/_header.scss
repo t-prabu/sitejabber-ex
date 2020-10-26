@@ -1,4 +1,4 @@
-.header-wrapper {
+.header {
   min-height: 80px;
   position: fixed;
   top: 0;
@@ -7,8 +7,28 @@
   z-index: 150;
   transform: translateY(-80px);
   animation: header-drop-in 0.5s linear 1s 1 forwards;
+  @extend .bg-white;
+  @extend .d-flex;
+  .header__container {
+    @extend .container;
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .flex-fill;
+  }
+  .header__logo {
+    .header__logo--align-self-center {
+      @extend .align-self-center;
+    }
+  }
+  .header__cta-btn {
+    @extend .btn;
+    @extend .btn-primary;
+  }
 }
-.header-nav {
+.header__nav {
+  @extend .justify-content-center;
+  @extend .d-flex;
+  @extend .justify-content-around;
   a {
     color: $light-dark !important;
     position: relative;
@@ -37,11 +57,11 @@
   }
 }
 
-.mobile-menu-wrapper {
+.mobile-menu {
   max-width: 100%;
   display: none;
 
-  .menu-mobile-menu-container {
+  .mobile-menu__container {
     display: none;
     position: fixed;
     top: 0;
@@ -52,7 +72,7 @@
     padding-top: 100px;
     background: rgba(0, 0, 0, 0.2);
     z-index: 40;
-    .nav-list {
+    .mobile-menu__nav-list {
       display: block;
       background: #fff;
       border-radius: 5px;
@@ -80,7 +100,7 @@
     }
   }
 
-  ul.nav-list {
+  ul.mobile-menu__nav-list {
     display: none;
     left: 20px;
     right: 20px;
@@ -154,7 +174,7 @@
     }
   }
 
-  .mobile-menu-toggle {
+  .mobile-menu__toggle-btn {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -219,7 +239,11 @@
   }
 }
 
-@keyframes header-drop-in{
-  from{transform: translateY(-80px);}
-  to{transform: translateY(0);}
+@keyframes header-drop-in {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

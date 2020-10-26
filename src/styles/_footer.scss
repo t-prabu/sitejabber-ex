@@ -1,8 +1,17 @@
-.soc-icon {
-  filter: grayscale(1) brightness(1000%);
-  &:hover,
-  &:focus,
-  &.focus {
-    filter: none;
+.footer {
+  @extend .bg-dark-blue;
+  @extend .p-t-50;
+  @extend .text-center;
+  @extend .text-lg-left;
+  .footer__logo {
+  }
+  .footer__soc-icon {
+    @extend .m-r-8;
+    filter: grayscale(1) brightness(1000%);
+    &:hover,
+    &:focus,
+    &.focus {
+      filter: none;
+    }
   }
 }
