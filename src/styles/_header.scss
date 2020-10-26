@@ -16,8 +16,8 @@
     @extend .flex-fill;
   }
   .header__logo {
+    @extend .align-self-center;
     .header__logo--align-self-center {
-      @extend .align-self-center;
     }
   }
   .header__cta-btn {
